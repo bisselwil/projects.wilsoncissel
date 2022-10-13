@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- your name & date -->
+
+<html>
+    <head>
+        <title>Turtle Beach</title>
+        <style>
+            body {background-color: lightblue;
+            text-align: center;}
+            img {width: 30%;
+            border-width: 10px;
+            border-style: solid;
+            border-color: green}
+            .button1 {background: blue; color:white; border-radius:2px; }
+            .button2 {background: darkgreen; color:white; border-radius:2px; }
+            .button3 {background: red; color:white; border-radius:2px; }
+    button:hover {color: black; background:white;}
+    button:active {
+color: white; background: black;
+}
+    
+        </style>
+
+
+
+         <script>
+
+function changeToLightblue() {
+
+    document.body.style.background = "cyan";
+    document.body.style.color = "black";
+    
+    
+}
+
+
+function changeToDarkblue() {
+
+    document.body.style.background = "#000080";
+    document.body.style.color = "white";
+}
+
+function changeToSand() {
+
+    document.body.style.background = "#F0E68C";
+    document.body.style.color = "black";
+}
+
+
+
+
+
+
+
+
+function newpic(pic) {
+
+
+document.getElementById("PIC").src = pic;
+}
+
+
+
+function Resett() {
+
+
+document.getElementById("PIC").src = "turtle.png";
+document.body.style.background = "lightblue";
+ document.body.style.color = "black";
+}
+
+
+
+  
+  
+    </script>
+    </head>
+    
+    <body>
+<img id="PIC" src="turtle.png">
+<h1>Thanks you viewing my Turtle beach drawing!</h1>
+<br>
+<h3>This is a Beach drawing on turtle! It includes waves, Turtles (get it?), And the beach itself!</h3>
+
+
+<button class="button1" id="b1"onclick="changeToLightblue()">Water Color</button>
+<button class="button1" id="b2"onclick="changeToDarkblue()">Sky Color</button>
+<button class="button1" id="b3"onclick="changeToSand()">Sand Color</button>
+
+<br><br>
+<br>
+
+<button class="button2" onclick="newpic('turtles.png')">View turtles up close</button>
+<button class="button2" onclick="newpic('turtle.png')">View Full Image</button>
+<br>
+<br>
+<br>
+<br>
+<button class="button3" id="b3"onclick="Resett()">Reset Page</button>
+    </body>
+
+</html>
